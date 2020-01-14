@@ -3,10 +3,11 @@ use crate::schema::users;
 use serde::{Deserialize,Serialize};
 use crate::error::ServiceError;
 use crate::models::{Validate, re_test_name, re_test_psw};
-use actix_web::{Error, error};
+use actix_web::{Error, error, FromRequest, HttpRequest};
 use actix::Message;
 use jsonwebtoken::{encode, Header, decode, Validation};
 use crate::models::msg::Msg;
+use actix_web::dev::Payload;
 
 pub const LIMIT_PERMIT: i16 = 0x01;  // follow,star...
 pub const BASIC_PERMIT: i16 = 0x02;  // create, edit self created...
@@ -70,6 +71,56 @@ pub struct CheckUser {
     pub nickname: String,
 }
 
+impl From<Claims> for CheckUser {
+    fn from(claims: Claims) -> Self {
+        CheckUser {
+            id: claims.uid,
+            uname: claims.uname,
+            join_at: Utc::now().naive_utc(), // ??
+            avatar: "".to_owned(),
+            email: "".to_owned(),
+            intro: "".to_owned(),
+            location: "".to_owned(),
+            nickname: "".to_owned(),
+        }
+    }
+}
+
+impl From<User> for CheckUser {
+    fn from(user: User) -> Self {
+        CheckUser {
+            id: user.id,
+            uname: user.uname,
+            join_at: user.join_at,
+            avatar: user.avatar,
+            email: user.email,
+            intro: user.intro,
+            location: user.location,
+            nickname: user.nickname,
+        }
+    }
+}
+impl Message for CheckUser {
+    type Result = Result<Msg, ServiceError>;
+}
+
+//// auth via token
+//impl FromRequest for CheckUser {
+//    type Config = ();
+//    type Error = ServiceError;
+//    type Future = Result<CheckUser, ServiceError>;
+//
+//    fn from_request(req: &HttpRequest, _: &mut Payload) -> Self::Future {
+//        if let Some(auth_token) = req.headers().get("authorization") {
+//            if let Ok(auth) = auth_token.to_str() {
+//                let user: CheckUser = decode_token(auth)?;
+//                return Ok(user);
+//            }
+//        }
+//        Err(ServiceError::Unauthorized.into())
+//    }
+//}
+
 #[derive(Debug, Deserialize,Serialize)]
 pub struct AuthUser {
     pub uname: String,
@@ -118,20 +169,6 @@ impl Claims {
         }
     }
 }
-impl From<Claims> for CheckUser {
-    fn from(claims: Claims) -> Self {
-        CheckUser {
-            id: claims.uid,
-            uname: claims.uname,
-            join_at: Utc::now().naive_utc(), // ??
-            avatar: "".to_owned(),
-            email: "".to_owned(),
-            intro: "".to_owned(),
-            location: "".to_owned(),
-            nickname: "".to_owned(),
-        }
-    }
-}
 
 fn get_secret() -> String {
     dotenv::var("SECRET_KEY").unwrap_or_else(|_| "AHaRdGuESsSeCREkY".into())
@@ -157,9 +194,8 @@ pub struct RegUser {
 }
 
 impl Message for RegUser {
-    type Result = Result<Msg, failure::Error>;
+    type Result = Result<Msg, ServiceError>;
 }
-
 
 impl Validate for RegUser {
     fn validate(&self) -> Result<(), Error> {

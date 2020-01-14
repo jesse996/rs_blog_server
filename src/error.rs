@@ -9,7 +9,6 @@ use failure::{Fail,Error};
 #[derive(Debug, Fail)]
 pub enum ServiceError {
     // 400
-    //    #[display(fmt = "BadRequest: {}", _0)]
     #[fail(display =  "BadRequest: {}", _0)]
     BadRequest(String),
 
@@ -18,12 +17,10 @@ pub enum ServiceError {
     Unauthorized,
 
     // 404
-    //    #[display(fmt = "Not Found: {}", _0)]
     #[fail(display = "Not Found: {}",_0)]
     NotFound(String),
 
     // 500+
-    //    #[display(fmt = "Internal Server Error: {}", _0)]
     #[fail(display = "Internal Server Error: {}",_0)]
     InternalServerError(String),
 }

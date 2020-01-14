@@ -25,7 +25,7 @@ async fn main() -> std::io::Result<()> {
             .wrap(Cors::default())
             .service(
                 scope("/api")
-                    .service(api::user::login)
+                    .service(api::user::signin)
                     .service(api::user::signup),
             )
     })

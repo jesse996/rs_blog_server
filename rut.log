@@ -288,3 +288,71 @@
 [2020-01-14][16:32:59][INFO][actix_server::builder,320] SIGINT received, exiting
 [2020-01-14][16:32:59][INFO][actix_server::builder,263] Starting 16 workers
 [2020-01-14][16:32:59][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-14][16:38:14][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][16:38:19][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][16:38:19][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-14][16:38:25][DEBUG][actix_web::middleware::logger,217] Error in response: BadRequest("asd")
+[2020-01-14][16:38:25][INFO][actix_web::middleware::logger,257] 127.0.0.1:52792 "POST /api/signup HTTP/1.1" 400 5 "-" "HTTPie/1.0.3" 0.000515
+[2020-01-14][16:39:12][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][16:42:13][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][16:42:13][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-14][16:51:11][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][16:51:26][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][16:51:26][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-14][16:57:43][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][16:57:49][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][16:57:49][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-14][17:02:29][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][17:02:36][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][17:02:36][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-14][18:06:18][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][18:13:27][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][18:13:27][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-14][18:14:23][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][18:14:29][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][18:14:29][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-14][18:15:08][INFO][actix_web::middleware::logger,257] 127.0.0.1:53862 "POST /api/signin HTTP/1.1" 404 0 "-" "HTTPie/1.0.3" 0.000268
+[2020-01-14][18:15:13][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][18:15:32][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][18:15:32][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-14][18:15:34][ERROR][actix_http::response,58] Internal Server Error: MailboxError(Mailbox has closed)
+[2020-01-14][18:15:34][INFO][actix_web::middleware::logger,257] 127.0.0.1:53900 "POST /api/signin HTTP/1.1" 500 18 "-" "HTTPie/1.0.3" 0.099564
+[2020-01-14][18:18:26][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][18:18:32][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][18:18:32][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-14][18:18:38][ERROR][actix_http::response,58] Internal Server Error: MailboxError(Mailbox has closed)
+[2020-01-14][18:18:38][INFO][actix_web::middleware::logger,257] 127.0.0.1:53946 "POST /api/signin HTTP/1.1" 500 18 "-" "HTTPie/1.0.3" 0.116835
+[2020-01-14][18:19:01][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][18:19:08][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][18:19:08][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-14][18:19:09][ERROR][actix_http::response,58] Internal Server Error: MailboxError(Mailbox has closed)
+[2020-01-14][18:19:09][INFO][actix_web::middleware::logger,257] 127.0.0.1:53986 "POST /api/signin HTTP/1.1" 500 18 "-" "HTTPie/1.0.3" 0.118206
+[2020-01-14][18:25:00][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][18:25:07][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][18:25:07][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-14][18:25:09][ERROR][actix_http::response,58] Internal Server Error: MailboxError(Mailbox has closed)
+[2020-01-14][18:25:09][INFO][actix_web::middleware::logger,257] 127.0.0.1:54042 "POST /api/signin HTTP/1.1" 500 18 "-" "HTTPie/1.0.3" 0.090037
+[2020-01-14][18:25:54][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][18:26:00][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][18:26:00][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-14][18:26:03][ERROR][actix_http::response,58] Internal Server Error: MailboxError(Mailbox has closed)
+[2020-01-14][18:26:03][INFO][actix_web::middleware::logger,257] 127.0.0.1:54080 "POST /api/signin HTTP/1.1" 500 18 "-" "HTTPie/1.0.3" 0.119306
+[2020-01-14][18:27:51][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][18:28:33][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][18:28:33][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-14][18:28:35][DEBUG][actix_web::middleware::logger,217] Error in response: BadRequest("Auth fail")
+[2020-01-14][18:28:35][INFO][actix_web::middleware::logger,257] 127.0.0.1:54128 "POST /api/signin HTTP/1.1" 400 11 "-" "HTTPie/1.0.3" 0.002590
+[2020-01-14][18:29:45][INFO][actix_web::middleware::logger,257] 127.0.0.1:54136 "POST /api/signup HTTP/1.1" 200 34 "-" "HTTPie/1.0.3" 0.493481
+[2020-01-14][18:29:54][INFO][actix_web::middleware::logger,257] 127.0.0.1:54140 "POST /api/signin HTTP/1.1" 200 472 "-" "HTTPie/1.0.3" 0.268174
+[2020-01-14][18:38:19][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][18:38:45][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][18:38:45][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-14][18:39:08][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][18:39:14][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][18:39:14][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-14][18:41:14][DEBUG][actix_web::middleware::logger,217] Error in response: BadRequest("Auth fail")
+[2020-01-14][18:41:14][INFO][actix_web::middleware::logger,257] 127.0.0.1:54986 "POST /api/signin HTTP/1.1" 400 11 "-" "HTTPie/1.0.3" 0.002140
+[2020-01-14][18:41:26][INFO][actix_web::middleware::logger,257] 127.0.0.1:55038 "POST /api/signup HTTP/1.1" 200 34 "-" "HTTPie/1.0.3" 0.235886
+[2020-01-14][18:41:59][INFO][actix_web::middleware::logger,257] 127.0.0.1:55208 "POST /api/signin HTTP/1.1" 200 470 "-" "HTTPie/1.0.3" 0.229746
+[2020-01-14][18:42:41][DEBUG][actix_web::middleware::logger,217] Error in response: BadRequest("Auth fail")
+[2020-01-14][18:42:41][INFO][actix_web::middleware::logger,257] 127.0.0.1:55384 "POST /api/signin HTTP/1.1" 400 11 "-" "HTTPie/1.0.3" 0.265568
