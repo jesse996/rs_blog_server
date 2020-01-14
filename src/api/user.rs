@@ -1,12 +1,12 @@
 use crate::db::DbAddr;
-use crate::error::ServiceError;
 use crate::models::msg::AuthMsg;
-use crate::models::user::{encode_token, AuthUser, RegUser};
+use crate::models::user::{AuthUser, RegUser};
 use crate::models::Validate;
-use actix::Response;
 use actix_web::web::{Data, Json};
-use actix_web::{error, get, post, web, HttpResponse, Responder, ResponseError, Result};
-use failure::Fail;
+use actix_web::{get, post, web, HttpResponse, Result};
+use crate::utils::encode_token;
+
+
 
 #[post("/signin")]
 pub async fn signin(auth: web::Json<AuthUser>, db: web::Data<DbAddr>) -> Result<HttpResponse> {
@@ -25,7 +25,7 @@ pub async fn signin(auth: web::Json<AuthUser>, db: web::Data<DbAddr>) -> Result<
             };
             Ok(HttpResponse::Ok().json(auth_msg))
         }
-        Err(e) => Err(e.into()),
+        Err(e) => Err(e.into())
     }
 }
 
@@ -36,6 +36,12 @@ pub async fn signup(data: Json<RegUser>, db: Data<DbAddr>) -> Result<HttpRespons
     let res = db.send(data).await?;
     match res {
         Ok(data) => Ok(HttpResponse::Ok().json(data)),
-        Err(e) => Err(e.into())
+        Err(e) => Err(e.into()),
     }
+}
+
+
+#[get("/posts")]
+pub async fn posts() -> Result<HttpResponse> {
+    Ok(HttpResponse::Ok().json("ok"))
 }

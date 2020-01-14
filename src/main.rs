@@ -1,3 +1,5 @@
+#![allow(dead_code)]
+
 #[macro_use]
 extern crate diesel;
 
@@ -11,6 +13,7 @@ mod error;
 mod logger;
 mod models;
 mod schema;
+mod utils;
 
 #[actix_rt::main]
 async fn main() -> std::io::Result<()> {

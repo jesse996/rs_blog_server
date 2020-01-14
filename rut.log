@@ -356,3 +356,85 @@
 [2020-01-14][18:41:59][INFO][actix_web::middleware::logger,257] 127.0.0.1:55208 "POST /api/signin HTTP/1.1" 200 470 "-" "HTTPie/1.0.3" 0.229746
 [2020-01-14][18:42:41][DEBUG][actix_web::middleware::logger,217] Error in response: BadRequest("Auth fail")
 [2020-01-14][18:42:41][INFO][actix_web::middleware::logger,257] 127.0.0.1:55384 "POST /api/signin HTTP/1.1" 400 11 "-" "HTTPie/1.0.3" 0.265568
+[2020-01-14][18:47:52][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][18:47:56][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][18:47:56][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-14][18:48:20][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][18:52:07][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][18:52:07][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:3000" service on 127.0.0.1:3000
+[2020-01-14][18:52:13][INFO][actix_web::middleware::logger,257] 127.0.0.1:49322 "GET / HTTP/1.1" 404 0 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36" 0.000448
+[2020-01-14][18:52:21][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][19:12:47][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][19:12:47][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:3000" service on 127.0.0.1:3000
+[2020-01-14][19:16:00][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][19:30:45][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][19:30:45][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:3000" service on 127.0.0.1:3000
+[2020-01-14][19:38:44][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][19:38:52][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][19:38:52][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:3000" service on 127.0.0.1:3000
+[2020-01-14][19:41:59][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][19:59:06][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][19:59:06][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:3000" service on 127.0.0.1:3000
+[2020-01-14][20:01:26][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][20:01:34][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][20:01:34][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:3000" service on 127.0.0.1:3000
+[2020-01-14][20:02:08][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][20:05:46][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][20:05:46][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:3000" service on 127.0.0.1:3000
+[2020-01-14][20:07:09][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][20:07:50][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][20:07:50][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:3000" service on 127.0.0.1:3000
+[2020-01-14][20:08:07][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][20:08:56][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][20:08:56][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:3000" service on 127.0.0.1:3000
+[2020-01-14][20:09:58][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][20:10:05][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][20:10:05][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:3000" service on 127.0.0.1:3000
+[2020-01-14][20:12:56][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][20:13:52][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][20:13:52][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:3000" service on 127.0.0.1:3000
+[2020-01-14][20:13:59][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][20:14:05][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][20:14:05][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:3000" service on 127.0.0.1:3000
+[2020-01-14][20:16:21][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][20:16:29][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][20:16:29][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:3000" service on 127.0.0.1:3000
+[2020-01-14][20:16:32][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][20:16:33][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][20:16:33][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:3000" service on 127.0.0.1:3000
+[2020-01-14][20:17:06][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][20:17:34][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][20:17:34][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:3000" service on 127.0.0.1:3000
+[2020-01-14][20:17:45][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][20:17:58][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][20:17:58][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:3000" service on 127.0.0.1:3000
+[2020-01-14][20:18:10][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][20:18:38][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][20:18:38][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:3000" service on 127.0.0.1:3000
+[2020-01-14][20:19:25][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][20:23:33][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][20:23:33][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:3000" service on 127.0.0.1:3000
+[2020-01-14][20:24:39][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][20:24:46][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][20:24:46][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:3000" service on 127.0.0.1:3000
+[2020-01-14][20:24:59][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][20:25:09][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][20:25:09][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:3000" service on 127.0.0.1:3000
+[2020-01-14][20:29:40][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][20:31:51][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][20:31:51][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:3000" service on 127.0.0.1:3000
+[2020-01-14][20:50:10][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][20:50:16][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][20:50:16][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:3000" service on 127.0.0.1:3000
+[2020-01-14][20:50:31][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][20:50:37][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][20:50:37][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:3000" service on 127.0.0.1:3000
+[2020-01-14][20:54:46][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][20:54:52][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][20:54:52][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:3000" service on 127.0.0.1:3000
+[2020-01-14][20:56:38][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][21:21:22][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][21:21:22][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:3000" service on 127.0.0.1:3000
+[2020-01-14][21:21:24][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][21:23:38][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][21:23:38][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:3000" service on 127.0.0.1:3000

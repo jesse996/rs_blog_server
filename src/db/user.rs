@@ -3,15 +3,15 @@ use crate::error::ServiceError;
 use crate::models::msg::Msg;
 use crate::models::user::{AuthUser, CheckUser, RegUser, User};
 use actix::Handler;
-use argon2::Config;
 use diesel::prelude::*;
-//use std::error::Error;
-use std::time::SystemTime;
+use crate::utils::hash_password;
+use failure::Error;
+use uuid::Uuid;
 
 
-//sign in handle
+// /signin handle
 impl Handler<AuthUser> for Dba {
-    type Result = Result<CheckUser, ServiceError>;
+    type Result = Result<CheckUser, Error>;
 
     fn handle(&mut self, msg: AuthUser, _: &mut Self::Context) -> Self::Result {
         use crate::schema::users::dsl::*;
@@ -34,18 +34,12 @@ impl Handler<AuthUser> for Dba {
     }
 }
 
-fn hash_password(plain: &str) -> String {
-    let password = plain.as_bytes();
-    let salt = b"jesse233";
-    let config = Config::default();
-    argon2::hash_encoded(password, salt, &config).unwrap()
-}
 
-
+//signup handle
 impl Handler<RegUser> for Dba {
-    type Result = Result<Msg, ServiceError>;
+    type Result = Result<Msg, Error>;
 
-    fn handle(&mut self, msg: RegUser, ctx: &mut Self::Context) -> Self::Result {
+    fn handle(&mut self, msg: RegUser, _: &mut Self::Context) -> Self::Result {
         use crate::schema::users::dsl::*;
         let conn = &self.0.get()?;
         let check_user = users
@@ -59,11 +53,11 @@ impl Handler<RegUser> for Dba {
             }),
             None => {
                 //hash password
-                let pswd = hash_password(&msg.password);
-                // generae uuid as user.id
-                let uid = uuid::Uuid::new_v4().to_string();
+                let psw = hash_password(&msg.password);
+                // generate uuid as user.id
+                let uid = Uuid::new_v4().to_string();
                 let unm = msg.uname;
-                let new_user = User::new(uid, unm, pswd);
+                let new_user = User::new(uid, unm, psw);
                 diesel::insert_into(users).values(&new_user).execute(conn)?;
                 Ok(Msg {
                     status: 201,
