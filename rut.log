@@ -1,0 +1,290 @@
+[2020-01-12][16:37:16][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-12][16:37:16][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:3000" service on 127.0.0.1:3000
+[2020-01-12][16:37:21][INFO][actix_web::middleware::logger,257] 127.0.0.1:57384 "GET / HTTP/1.1" 200 4 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36" 0.000309
+[2020-01-12][16:37:21][INFO][actix_web::middleware::logger,257] 127.0.0.1:57384 "GET /favicon.ico HTTP/1.1" 404 0 "http://127.0.0.1:3000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36" 0.000237
+[2020-01-12][16:38:47][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-12][16:40:03][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-12][16:40:03][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:3000" service on 127.0.0.1:3000
+[2020-01-12][16:40:35][INFO][actix_web::middleware::logger,257] 127.0.0.1:57418 "GET / HTTP/1.1" 200 4 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36" 0.000224
+[2020-01-12][16:40:35][INFO][actix_web::middleware::logger,257] 127.0.0.1:57420 "GET / HTTP/1.1" 200 4 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36" 0.000209
+[2020-01-12][16:41:43][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-12][16:41:48][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-12][16:41:48][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:3000" service on 127.0.0.1:3000
+[2020-01-12][16:41:51][INFO][actix_web::middleware::logger,257] 127.0.0.1:57426 "GET / HTTP/1.1" 200 4 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36" 0.000200
+[2020-01-12][16:53:04][INFO][actix_web::middleware::logger,257] 127.0.0.1:57702 "GET /api/a HTTP/1.1" 200 4 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36" 0.000293
+[2020-01-12][17:00:36][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-12][17:02:12][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-12][17:02:12][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:3000" service on 127.0.0.1:3000
+[2020-01-12][17:02:15][INFO][actix_web::middleware::logger,257] 127.0.0.1:57766 "GET /api/a HTTP/1.1" 404 0 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36" 0.000256
+[2020-01-12][17:02:17][INFO][actix_web::middleware::logger,257] 127.0.0.1:57766 "GET /api/ HTTP/1.1" 404 0 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36" 0.000300
+[2020-01-12][17:02:36][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-12][17:02:40][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-12][17:02:40][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:3000" service on 127.0.0.1:3000
+[2020-01-12][17:02:40][INFO][actix_web::middleware::logger,257] 127.0.0.1:57786 "GET /api/ HTTP/1.1" 200 5 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36" 0.000270
+[2020-01-12][17:02:42][INFO][actix_web::middleware::logger,257] 127.0.0.1:57786 "GET /api/ HTTP/1.1" 200 5 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36" 0.000353
+[2020-01-12][17:14:42][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-12][17:15:43][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-12][17:15:43][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:3000" service on 127.0.0.1:3000
+[2020-01-12][17:16:30][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-12][17:16:33][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-12][17:16:33][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:3000" service on 127.0.0.1:3000
+[2020-01-12][17:17:02][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-12][17:17:06][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-12][17:17:06][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:3000" service on 127.0.0.1:3000
+[2020-01-12][17:18:55][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-12][17:18:59][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-12][17:18:59][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:3000" service on 127.0.0.1:3000
+[2020-01-12][17:19:05][INFO][actix_web::middleware::logger,257] 127.0.0.1:58004 "POST /api/login HTTP/1.1" 404 0 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36" 0.000205
+[2020-01-12][17:19:15][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-12][17:19:18][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-12][17:19:18][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:3000" service on 127.0.0.1:3000
+[2020-01-12][17:19:53][INFO][actix_web::middleware::logger,257] 127.0.0.1:58014 "POST /api/login HTTP/1.1" 404 0 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36" 0.000309
+[2020-01-12][17:20:17][INFO][actix_web::middleware::logger,257] 127.0.0.1:58018 "POST /api/login HTTP/1.1" 404 0 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36" 0.000249
+[2020-01-12][17:20:23][INFO][actix_web::middleware::logger,257] 127.0.0.1:58020 "POST /api/login HTTP/1.1" 404 0 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36" 0.000258
+[2020-01-12][17:21:01][INFO][actix_web::middleware::logger,257] 127.0.0.1:58026 "POST /login HTTP/1.1" 404 0 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36" 0.000247
+[2020-01-12][17:21:32][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-12][17:21:37][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-12][17:21:37][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:3000" service on 127.0.0.1:3000
+[2020-01-12][17:21:42][DEBUG][actix_web::types::json,192] Failed to deserialize Json from payload. Request path: /api/login
+[2020-01-12][17:21:42][DEBUG][actix_web::middleware::logger,217] Error in response: ContentType
+[2020-01-12][17:21:42][INFO][actix_web::middleware::logger,257] 127.0.0.1:58034 "POST /api/login HTTP/1.1" 400 0 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36" 0.000550
+[2020-01-12][17:21:49][INFO][actix_web::middleware::logger,257] 127.0.0.1:58036 "POST /api/login HTTP/1.1" 200 3 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36" 0.000420
+[2020-01-12][17:25:10][DEBUG][actix_web::types::json,192] Failed to deserialize Json from payload. Request path: /api/login
+[2020-01-12][17:25:10][DEBUG][actix_web::middleware::logger,217] Error in response: ContentType
+[2020-01-12][17:25:10][INFO][actix_web::middleware::logger,257] 127.0.0.1:58232 "POST /api/login HTTP/1.1" 400 0 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36" 0.000618
+[2020-01-12][17:25:31][DEBUG][actix_web::types::json,192] Failed to deserialize Json from payload. Request path: /api/login
+[2020-01-12][17:25:31][DEBUG][actix_web::middleware::logger,217] Error in response: ContentType
+[2020-01-12][17:25:31][INFO][actix_web::middleware::logger,257] 127.0.0.1:58236 "POST /api/login HTTP/1.1" 400 0 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36" 0.000486
+[2020-01-12][17:51:12][DEBUG][actix_web::types::json,192] Failed to deserialize Json from payload. Request path: /api/login
+[2020-01-12][17:51:12][DEBUG][actix_web::middleware::logger,217] Error in response: ContentType
+[2020-01-12][17:51:12][INFO][actix_web::middleware::logger,257] 127.0.0.1:58472 "POST /api/login HTTP/1.1" 400 0 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36" 0.000476
+[2020-01-12][17:51:45][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-12][17:51:50][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-12][17:51:50][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:3000" service on 127.0.0.1:3000
+[2020-01-12][17:51:53][INFO][actix_web::middleware::logger,257] 127.0.0.1:58482 "POST /api/login HTTP/1.1" 200 5 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36" 0.000312
+[2020-01-12][18:01:28][INFO][actix_web::middleware::logger,257] 127.0.0.1:58786 "POST / HTTP/1.1" 404 0 "-" "axios/0.19.1" 0.000256
+[2020-01-12][18:01:36][DEBUG][actix_web::middleware::logger,217] Error in response: ContentType
+[2020-01-12][18:01:36][INFO][actix_web::middleware::logger,257] 127.0.0.1:58790 "POST /api/login HTTP/1.1" 400 18 "-" "axios/0.19.1" 0.000409
+[2020-01-12][18:01:58][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-12][18:02:02][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-12][18:02:02][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:3000" service on 127.0.0.1:3000
+[2020-01-12][18:02:03][INFO][actix_web::middleware::logger,257] 127.0.0.1:58798 "POST /api/login HTTP/1.1" 200 5 "-" "axios/0.19.1" 0.000403
+[2020-01-12][18:02:07][INFO][actix_web::middleware::logger,257] 127.0.0.1:58800 "POST /api/login HTTP/1.1" 200 5 "-" "axios/0.19.1" 0.000394
+[2020-01-12][18:02:27][DEBUG][actix_web::types::json,192] Failed to deserialize Json from payload. Request path: /api/login
+[2020-01-12][18:02:27][DEBUG][actix_web::middleware::logger,217] Error in response: ContentType
+[2020-01-12][18:02:27][INFO][actix_web::middleware::logger,257] 127.0.0.1:58802 "POST /api/login HTTP/1.1" 400 0 "-" "axios/0.19.1" 0.000505
+[2020-01-12][18:02:28][DEBUG][actix_web::types::json,192] Failed to deserialize Json from payload. Request path: /api/login
+[2020-01-12][18:02:28][DEBUG][actix_web::middleware::logger,217] Error in response: ContentType
+[2020-01-12][18:02:28][INFO][actix_web::middleware::logger,257] 127.0.0.1:58806 "POST /api/login HTTP/1.1" 400 0 "-" "axios/0.19.1" 0.000444
+[2020-01-12][18:02:29][DEBUG][actix_web::types::json,192] Failed to deserialize Json from payload. Request path: /api/login
+[2020-01-12][18:02:29][DEBUG][actix_web::middleware::logger,217] Error in response: ContentType
+[2020-01-12][18:02:29][INFO][actix_web::middleware::logger,257] 127.0.0.1:58808 "POST /api/login HTTP/1.1" 400 0 "-" "axios/0.19.1" 0.000364
+[2020-01-12][18:05:16][INFO][actix_web::middleware::logger,257] 127.0.0.1:58852 "POST /api/login HTTP/1.1" 200 5 "-" "axios/0.19.1" 0.000376
+[2020-01-12][18:06:35][INFO][actix_web::middleware::logger,257] 127.0.0.1:58876 "POST /api/login HTTP/1.1" 200 5 "-" "axios/0.19.1" 0.000377
+[2020-01-12][18:11:59][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-12][20:05:35][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-12][20:05:35][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-12][20:05:44][DEBUG][actix_web::types::json,192] Failed to deserialize Json from payload. Request path: /api/login
+[2020-01-12][20:05:44][DEBUG][actix_web::middleware::logger,217] Error in response: ContentType
+[2020-01-12][20:05:44][INFO][actix_web::middleware::logger,257] 127.0.0.1:49968 "POST /api/login HTTP/1.1" 400 0 "-" "HTTPie/1.0.3" 0.000480
+[2020-01-12][20:06:03][INFO][actix_web::middleware::logger,257] 127.0.0.1:49970 "POST /api/login HTTP/1.1" 200 5 "-" "HTTPie/1.0.3" 0.000265
+[2020-01-12][20:06:10][INFO][actix_web::middleware::logger,257] 127.0.0.1:49972 "POST /api/login HTTP/1.1" 200 5 "-" "HTTPie/1.0.3" 0.000385
+[2020-01-12][20:06:21][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-12][20:06:26][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-12][20:06:26][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-12][20:06:28][INFO][actix_web::middleware::logger,257] 127.0.0.1:49974 "POST /api/login HTTP/1.1" 200 5 "-" "HTTPie/1.0.3" 0.000427
+[2020-01-12][20:06:39][INFO][actix_web::middleware::logger,257] 127.0.0.1:49978 "POST /api/login HTTP/1.1" 200 5 "-" "HTTPie/1.0.3" 0.000423
+[2020-01-12][20:06:57][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-12][20:07:02][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-12][20:07:02][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-12][20:07:03][INFO][actix_web::middleware::logger,257] 127.0.0.1:49982 "POST /api/login HTTP/1.1" 200 5 "-" "HTTPie/1.0.3" 0.000382
+[2020-01-12][21:12:44][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-13][00:51:46][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-13][00:51:46][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-13][00:51:49][INFO][actix_web::middleware::logger,257] 127.0.0.1:52794 "GET / HTTP/1.1" 404 0 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36" 0.000196
+[2020-01-13][00:52:49][DEBUG][actix_web::types::json,192] Failed to deserialize Json from payload. Request path: /api/login
+[2020-01-13][00:52:49][DEBUG][actix_web::middleware::logger,217] Error in response: Deserialize(Error("missing field `uname`", line: 1, column: 37))
+[2020-01-13][00:52:49][INFO][actix_web::middleware::logger,257] 127.0.0.1:52814 "POST /api/login HTTP/1.1" 400 0 "-" "HTTPie/1.0.3" 0.000357
+[2020-01-13][00:52:54][INFO][actix_web::middleware::logger,257] 127.0.0.1:52820 "POST /api/login HTTP/1.1" 200 2 "-" "HTTPie/1.0.3" 0.000392
+[2020-01-13][00:59:19][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-13][01:53:58][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-13][01:53:58][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-13][02:10:09][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-13][02:10:13][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-13][02:10:13][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-13][02:13:31][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-13][02:14:01][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-13][02:14:01][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-13][02:14:37][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-13][02:16:02][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-13][02:16:02][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-13][02:34:22][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-13][04:58:10][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-13][04:58:10][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-13][05:31:11][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-13][05:31:15][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-13][05:31:15][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-13][05:31:19][INFO][actix_web::middleware::logger,257] 127.0.0.1:54840 "POST /api/login HTTP/1.1" 200 30 "-" "HTTPie/1.0.3" 0.001534
+[2020-01-13][05:57:54][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-13][05:58:13][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-13][05:58:13][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-13][05:58:15][INFO][actix_web::middleware::logger,257] 127.0.0.1:54958 "POST /api/login HTTP/1.1" 200 30 "-" "HTTPie/1.0.3" 0.001563
+[2020-01-13][06:45:11][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-13][06:45:16][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-13][06:45:16][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-13][06:45:47][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-13][06:45:52][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-13][06:45:52][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-13][06:45:53][INFO][actix_web::middleware::logger,257] 127.0.0.1:55192 "POST /api/login HTTP/1.1" 200 30 "-" "HTTPie/1.0.3" 0.001188
+[2020-01-13][06:52:50][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-13][07:13:51][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-13][07:13:51][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-13][07:13:57][INFO][actix_web::middleware::logger,257] 127.0.0.1:55420 "POST /api/login HTTP/1.1" 400 11 "-" "HTTPie/1.0.3" 0.001324
+[2020-01-13][07:51:28][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-13][07:53:04][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-13][07:53:04][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-13][07:54:32][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-13][07:57:10][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-13][07:57:10][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-13][08:01:39][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-13][08:06:17][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-13][08:06:17][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-13][08:07:49][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-13][08:07:54][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-13][08:07:54][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-13][08:07:55][INFO][actix_web::middleware::logger,257] 127.0.0.1:55880 "POST /api/login HTTP/1.1" 400 11 "-" "HTTPie/1.0.3" 0.001269
+[2020-01-13][08:13:02][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-13][08:13:17][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-13][08:13:17][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-13][08:14:12][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-13][08:14:16][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-13][08:14:16][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-13][08:14:27][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-13][08:14:31][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-13][08:14:31][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-13][08:14:35][INFO][actix_web::middleware::logger,257] 127.0.0.1:55922 "POST /api/login HTTP/1.1" 400 11 "-" "HTTPie/1.0.3" 0.001159
+[2020-01-13][09:22:12][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-13][11:14:07][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-13][11:14:07][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-13][11:15:46][INFO][actix_web::middleware::logger,257] 127.0.0.1:57076 "POST /api/signup HTTP/1.1" 404 0 "-" "HTTPie/1.0.3" 0.000282
+[2020-01-13][11:16:25][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-13][11:16:47][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-13][11:16:47][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-13][11:16:49][DEBUG][actix_web::types::json,192] Failed to deserialize Json from payload. Request path: /api/signup
+[2020-01-13][11:16:49][DEBUG][actix_web::middleware::logger,217] Error in response: Deserialize(Error("missing field `confirm`", line: 1, column: 34))
+[2020-01-13][11:16:49][INFO][actix_web::middleware::logger,257] 127.0.0.1:57082 "POST /api/signup HTTP/1.1" 400 0 "-" "HTTPie/1.0.3" 0.000559
+[2020-01-13][11:17:36][DEBUG][actix_web::types::json,192] Failed to deserialize Json from payload. Request path: /api/signup
+[2020-01-13][11:17:36][DEBUG][actix_web::middleware::logger,217] Error in response: Deserialize(Error("missing field `confirm`", line: 1, column: 56))
+[2020-01-13][11:17:36][INFO][actix_web::middleware::logger,257] 127.0.0.1:57094 "POST /api/signup HTTP/1.1" 400 0 "-" "HTTPie/1.0.3" 0.000584
+[2020-01-13][11:18:20][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-13][11:18:25][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-13][11:18:25][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-13][11:18:26][DEBUG][actix_web::types::json,192] Failed to deserialize Json from payload. Request path: /api/signup
+[2020-01-13][11:18:26][DEBUG][actix_web::middleware::logger,217] Error in response: Deserialize(Error("missing field `confirm`", line: 1, column: 56))
+[2020-01-13][11:18:26][INFO][actix_web::middleware::logger,257] 127.0.0.1:57102 "POST /api/signup HTTP/1.1" 400 0 "-" "HTTPie/1.0.3" 0.000575
+[2020-01-13][11:19:19][INFO][actix_web::middleware::logger,257] 127.0.0.1:57108 "POST /api/login HTTP/1.1" 400 11 "-" "HTTPie/1.0.3" 0.002679
+[2020-01-13][11:19:23][DEBUG][actix_web::types::json,192] Failed to deserialize Json from payload. Request path: /api/signup
+[2020-01-13][11:19:23][DEBUG][actix_web::middleware::logger,217] Error in response: Deserialize(Error("missing field `confirm`", line: 1, column: 56))
+[2020-01-13][11:19:23][INFO][actix_web::middleware::logger,257] 127.0.0.1:57112 "POST /api/signup HTTP/1.1" 400 0 "-" "HTTPie/1.0.3" 0.000557
+[2020-01-13][11:21:41][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-13][11:21:46][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-13][11:21:46][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-13][11:21:47][DEBUG][actix_web::types::json,192] Failed to deserialize Json from payload. Request path: /api/signup
+[2020-01-13][11:21:47][DEBUG][actix_web::middleware::logger,217] Error in response: Deserialize(Error("missing field `confirm`", line: 1, column: 56))
+[2020-01-13][11:21:47][INFO][actix_web::middleware::logger,257] 127.0.0.1:57124 "POST /api/signup HTTP/1.1" 400 0 "-" "HTTPie/1.0.3" 0.000419
+[2020-01-13][11:22:30][DEBUG][actix_web::types::json,192] Failed to deserialize Json from payload. Request path: /api/signup
+[2020-01-13][11:22:30][DEBUG][actix_web::middleware::logger,217] Error in response: Deserialize(Error("missing field `confirm`", line: 1, column: 56))
+[2020-01-13][11:22:30][INFO][actix_web::middleware::logger,257] 127.0.0.1:57132 "POST /api/signup HTTP/1.1" 400 0 "-" "HTTPie/1.0.3" 0.000547
+[2020-01-13][11:24:08][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-13][11:24:13][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-13][11:24:13][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-13][11:24:26][DEBUG][actix_web::types::json,192] Failed to deserialize Json from payload. Request path: /api/signup
+[2020-01-13][11:24:26][DEBUG][actix_web::middleware::logger,217] Error in response: Deserialize(Error("missing field `confirm`", line: 1, column: 56))
+[2020-01-13][11:24:26][INFO][actix_web::middleware::logger,257] 127.0.0.1:57144 "POST /api/signup HTTP/1.1" 400 0 "-" "HTTPie/1.0.3" 0.000557
+[2020-01-13][11:25:53][DEBUG][actix_web::types::json,192] Failed to deserialize Json from payload. Request path: /api/signup
+[2020-01-13][11:25:53][DEBUG][actix_web::middleware::logger,217] Error in response: Deserialize(Error("missing field `confirm`", line: 1, column: 56))
+[2020-01-13][11:25:53][INFO][actix_web::middleware::logger,257] 127.0.0.1:57150 "POST /api/signup HTTP/1.1" 400 0 "-" "HTTPie/1.0.3" 0.000581
+[2020-01-13][11:26:38][INFO][actix_web::middleware::logger,257] 127.0.0.1:57158 "POST /api/signup HTTP/1.1" 200 2 "-" "HTTPie/1.0.3" 2.818978
+[2020-01-13][11:28:20][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-13][11:28:24][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-13][11:28:24][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-13][11:28:26][INFO][actix_web::middleware::logger,257] 127.0.0.1:57172 "POST /api/signup HTTP/1.1" 200 2 "-" "HTTPie/1.0.3" 0.001418
+[2020-01-13][11:28:41][INFO][actix_web::middleware::logger,257] 127.0.0.1:57176 "POST /api/signup HTTP/1.1" 200 2 "-" "HTTPie/1.0.3" 2.771536
+[2020-01-13][11:50:12][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-13][11:50:17][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-13][11:50:17][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-13][11:50:24][INFO][actix_web::middleware::logger,257] 127.0.0.1:57436 "POST /api/signup HTTP/1.1" 200 2 "-" "HTTPie/1.0.3" 2.827096
+[2020-01-14][00:32:34][INFO][actix_web::middleware::logger,257] 127.0.0.1:36884 "POST /api/signup HTTP/1.1" 200 2 "-" "HTTPie/1.0.3" 0.001611
+[2020-01-14][02:55:30][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][02:58:34][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][02:58:34][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-14][06:31:47][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][06:32:28][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][06:32:28][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-14][07:59:59][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][08:00:05][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][08:00:05][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-14][10:57:40][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][10:57:45][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][10:57:45][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-14][11:07:44][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][11:07:44][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-14][11:13:34][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][11:13:34][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-14][12:30:01][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][12:30:04][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][12:30:04][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-14][12:38:40][INFO][actix_web::middleware::logger,257] 127.0.0.1:50268 "POST /api/signup HTTP/1.1" 200 4 "-" "HTTPie/1.0.3" 0.003743
+[2020-01-14][12:43:50][INFO][actix_web::middleware::logger,257] 127.0.0.1:50386 "POST /api/signup HTTP/1.1" 200 4 "-" "HTTPie/1.0.3" 0.002101
+[2020-01-14][12:43:52][INFO][actix_web::middleware::logger,257] 127.0.0.1:50390 "POST /api/signup HTTP/1.1" 200 4 "-" "HTTPie/1.0.3" 0.001099
+[2020-01-14][12:48:12][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][12:50:45][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][12:50:45][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-14][12:50:56][INFO][actix_web::middleware::logger,257] 127.0.0.1:50496 "POST /api/signup HTTP/1.1" 200 37 "-" "HTTPie/1.0.3" 0.001854
+[2020-01-14][12:51:09][INFO][actix_web::middleware::logger,257] 127.0.0.1:50504 "POST /api/signup HTTP/1.1" 200 34 "-" "HTTPie/1.0.3" 0.034331
+[2020-01-14][12:53:09][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][12:56:54][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][12:56:54][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-14][12:57:04][INFO][actix_web::middleware::logger,257] 127.0.0.1:50596 "POST /api/signup HTTP/1.1" 200 37 "-" "HTTPie/1.0.3" 0.002670
+[2020-01-14][13:01:33][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][13:02:02][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][13:02:02][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-14][13:03:03][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][13:03:08][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][13:03:08][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-14][13:03:17][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][13:22:17][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][13:22:17][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-14][13:22:37][INFO][actix_web::middleware::logger,257] 127.0.0.1:50826 "POST /api/signup HTTP/1.1" 200 37 "-" "HTTPie/1.0.3" 0.002615
+[2020-01-14][13:23:22][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][13:23:22][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][13:23:22][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-14][13:23:27][INFO][actix_web::middleware::logger,257] 127.0.0.1:50868 "POST /api/signup HTTP/1.1" 200 37 "-" "HTTPie/1.0.3" 0.002501
+[2020-01-14][13:25:21][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][13:26:07][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][13:26:07][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-14][13:26:37][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][13:26:55][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][13:26:55][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-14][13:27:13][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][13:27:18][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][13:27:18][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-14][13:29:55][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][13:30:40][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][13:30:40][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-14][13:30:41][DEBUG][actix_web::middleware::logger,217] Error in response: BadRequest("bad")
+[2020-01-14][13:30:41][INFO][actix_web::middleware::logger,257] 127.0.0.1:51028 "POST /api/signup HTTP/1.1" 400 5 "-" "HTTPie/1.0.3" 0.001996
+[2020-01-14][13:45:06][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][13:55:48][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][13:55:48][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-14][13:55:53][DEBUG][actix_web::middleware::logger,217] Error in response: BadRequest("bad")
+[2020-01-14][13:55:53][INFO][actix_web::middleware::logger,257] 127.0.0.1:51188 "POST /api/signup HTTP/1.1" 400 5 "-" "HTTPie/1.0.3" 0.002487
+[2020-01-14][13:58:43][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][14:55:25][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][14:55:25][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-14][14:58:46][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][15:58:06][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][15:58:06][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
+[2020-01-14][16:32:59][INFO][actix_server::builder,320] SIGINT received, exiting
+[2020-01-14][16:32:59][INFO][actix_server::builder,263] Starting 16 workers
+[2020-01-14][16:32:59][INFO][actix_server::builder,275] Starting "actix-web-service-127.0.0.1:8000" service on 127.0.0.1:8000
