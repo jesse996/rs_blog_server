@@ -2,9 +2,9 @@ use crate::db::Dba;
 use crate::error::ServiceError;
 use crate::models::msg::Msg;
 use crate::models::user::{AuthUser, CheckUser, RegUser, User};
+use crate::utils::{hash_password, verify_password};
 use actix::Handler;
 use diesel::prelude::*;
-use crate::utils::hash_password;
 use failure::Error;
 use uuid::Uuid;
 
@@ -22,14 +22,11 @@ impl Handler<AuthUser> for Dba {
             .load::<User>(&*conn)?
             .pop();
         //      验证密码
-        if let Some(check_user) = query_user {
-            match argon2::verify_encoded(&check_user.password, &msg.password.as_bytes()) {
-                Ok(valid) if valid => {
-                    return Ok(check_user.into());
-                }
-                _ => ()
-            }
-        }
+         if let Some(check_user) = query_user {
+             if verify_password(&msg.password, &check_user.password) {
+                 return Ok(check_user.into());
+             }
+         }
         Err(ServiceError::BadRequest("Auth fail".to_string()).into())
     }
 }

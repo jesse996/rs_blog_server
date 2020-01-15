@@ -15,6 +15,7 @@ pub fn re_test_name(text: &str) -> bool {
     RE.is_match(text)
 }
 
+
 // re test psw
 pub fn re_test_psw(text: &str) -> bool {
     lazy_static! {
@@ -24,9 +25,11 @@ pub fn re_test_psw(text: &str) -> bool {
     RE.is_match(text)
 }
 
+
 fn get_secret() -> String {
     dotenv::var("SECRET_KEY").unwrap_or_else(|_| "AHaRdGuESsSeCREkY".into())
 }
+
 
 pub fn encode_token(data: &CheckUser) -> Result<String, ServiceError> {
     let claims = Claims::new(data.id.as_str(), data.uname.as_str());
@@ -41,9 +44,22 @@ pub fn decode_token(token: &str) -> Result<CheckUser, ServiceError> {
         .map_err(|_err| ServiceError::Unauthorized)?
 }
 
+
 pub fn hash_password(plain: &str) -> String {
     let password = plain.as_bytes();
     let salt = b"jesse233";
     let config = Config::default();
     argon2::hash_encoded(password, salt, &config).expect("hash password fail")
+}
+
+
+pub fn verify_password(plain: &str, hashed: &str) -> bool {
+    match argon2::verify_encoded(hashed, plain.as_bytes()) {
+        Ok(valid) if  valid => {
+            true
+        }
+        _ => {
+            false
+        }
+    }
 }

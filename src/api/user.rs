@@ -1,11 +1,11 @@
 use crate::db::DbAddr;
+use crate::error::ServiceError;
 use crate::models::msg::AuthMsg;
 use crate::models::user::{AuthUser, RegUser};
 use crate::models::Validate;
+use crate::utils::encode_token;
 use actix_web::web::{Data, Json};
 use actix_web::{get, post, web, HttpResponse, Result};
-use crate::utils::encode_token;
-
 
 
 #[post("/signin")]
@@ -25,7 +25,9 @@ pub async fn signin(auth: web::Json<AuthUser>, db: web::Data<DbAddr>) -> Result<
             };
             Ok(HttpResponse::Ok().json(auth_msg))
         }
-        Err(e) => Err(e.into())
+        Err(e) => {
+            Err(e.downcast::<ServiceError>()?.into())
+        }
     }
 }
 
