@@ -1,11 +1,11 @@
 use actix_web::{HttpResponse, ResponseError};
-use failure::Fail;
-
+use failure::{Fail,Error};
+use failure::format_err;
 
 #[derive(Debug, Fail)]
 pub enum ServiceError {
     // 400
-    #[fail(display = "BadRequest: {}", _0)]
+    #[fail(display = "Bad Request:{}", _0)]
     BadRequest(String),
 
     // 401
@@ -22,7 +22,7 @@ pub enum ServiceError {
 }
 
 
-// impl ResponseError trait allows to convert errors into http responses with appropriate data
+
 impl ResponseError for ServiceError {
     fn error_response(&self) -> HttpResponse {
         match *self {
