@@ -3,10 +3,13 @@
 #[macro_use]
 extern crate diesel;
 
+
 use actix_cors::Cors;
 use actix_web::middleware::Logger;
 use actix_web::web::scope;
 use actix_web::{App, HttpServer};
+
+
 mod api;
 mod db;
 mod error;
@@ -14,6 +17,7 @@ mod logger;
 mod models;
 mod schema;
 mod utils;
+
 
 #[actix_rt::main]
 async fn main() -> std::io::Result<()> {
@@ -29,10 +33,12 @@ async fn main() -> std::io::Result<()> {
             .service(
                 scope("/api")
                     .service(api::user::signin)
-                    .service(api::user::signup),
+                    .service(api::user::signup)
+                    .service(api::user::get)
+                    .service(api::user::update)
             )
     })
-    .bind(&bind_host)?
-    .run()
-    .await
+        .bind(&bind_host)?
+        .run()
+        .await
 }

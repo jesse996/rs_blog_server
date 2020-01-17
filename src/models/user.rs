@@ -3,10 +3,15 @@ use crate::schema::users;
 use serde::{Deserialize, Serialize};
 use crate::error::ServiceError;
 use crate::models::Validate;
-use actix_web::{Error, error,};
+use actix_web::{FromRequest, HttpRequest};
 use actix::Message;
 use crate::models::msg::Msg;
-use crate::utils::{re_test_name, re_test_psw};
+use crate::utils::{re_test_name, re_test_psw, decode_token};
+use failure::Error;
+use std::pin::Pin;
+use std::future::Future;
+use actix_web::http::header;
+use actix_web::dev::Payload;
 
 
 pub const LIMIT_PERMIT: i16 = 0x01;
@@ -113,27 +118,42 @@ impl From<User> for CheckUser {
 
 
 impl Message for CheckUser {
-    type Result = Result<Msg, ServiceError>;
+    type Result = Result<Msg, Error>;
 }
 
-//// auth via token
-//impl FromRequest for CheckUser {
-//    type Config = ();
-//    type Error = ServiceError;
-//    type Future = Result<CheckUser, ServiceError>;
-//
-//    fn from_request(req: &HttpRequest, _: &mut Payload) -> Self::Future {
-//        if let Some(auth_token) = req.headers().get("authorization") {
-//            if let Ok(auth) = auth_token.to_str() {
-//                let user: CheckUser = decode_token(auth)?;
-//                return Ok(user);
-//            }
-//        }
-//        Err(ServiceError::Unauthorized.into())
-//    }
-//}
 
-#[derive(Debug, Deserialize, Serialize)]
+lazy_static::lazy_static! {
+    static ref BEARER_REGEXP : regex::Regex =  regex::Regex::new(r"^Bearer\s(.*)$").expect("Bearer regexp failed!");
+}
+// auth via token
+impl FromRequest for CheckUser {
+    type Error = Error;
+    type Future = Pin<Box<dyn Future<Output = Result<Self, Self::Error>>>>;
+    type Config = ();
+
+    fn from_request(req: &HttpRequest, _: &mut Payload) -> Self::Future {
+        let token = req
+            .headers()
+            .get(header::AUTHORIZATION)
+            .and_then(|v|v.to_str().ok())
+            .and_then(|authorization| {
+                BEARER_REGEXP
+                    .captures(authorization)
+                    .and_then(|captures| captures.get(1))
+            })
+            .map(|v| v.as_str());
+        if let Some(auth) = token {
+            let user = decode_token(auth);
+            if let Ok(auth) = user {
+                return Box::pin(async { Ok(auth) });
+            }
+        }
+        Box::pin(async { Err(ServiceError::Unauthorized.into()) })
+    }
+}
+
+
+#[derive(Debug, Deserialize)]
 pub struct AuthUser {
     pub uname: String,
     pub password: String,
@@ -141,21 +161,21 @@ pub struct AuthUser {
 
 
 impl Validate for AuthUser {
-    fn validate(&self) -> Result<(), Error> {
+    fn validate(&self) -> Result<(), ServiceError> {
         let uname = &self.uname;
         let password = &self.password;
         let check = &uname.trim().len() < &16 && &password.trim().len() < &16;
         if check {
             Ok(())
         } else {
-            Err(error::ErrorBadRequest("Invalid username or password"))
+            Err(ServiceError::BadRequest("Invalid username or password".into()))
         }
     }
 }
 
 
 impl Message for AuthUser {
-    type Result = Result<CheckUser, failure::Error>;
+    type Result = Result<CheckUser, Error>;
 }
 
 
@@ -180,7 +200,7 @@ pub struct Claims {
 impl Claims {
     pub fn new(uid: &str, uname: &str) -> Self {
         Claims {
-            iss: "ruthub".into(),
+            iss: "jesse".into(),
             sub: "auth".into(),
             iat: Local::now().timestamp(),
             exp: (Local::now() + Duration::hours(24 * 5)).timestamp(),
@@ -189,7 +209,6 @@ impl Claims {
         }
     }
 }
-
 
 
 #[derive(Deserialize, Serialize, Debug)]
@@ -201,12 +220,12 @@ pub struct RegUser {
 
 
 impl Message for RegUser {
-    type Result = Result<Msg, failure::Error>;
+    type Result = Result<Msg, Error>;
 }
 
 
 impl Validate for RegUser {
-    fn validate(&self) -> Result<(), Error> {
+    fn validate(&self) -> Result<(), ServiceError> {
         let uname = &self.uname;
         let psw = &self.password;
         let check = re_test_name(uname) && re_test_psw(psw);
@@ -214,7 +233,55 @@ impl Validate for RegUser {
         if check {
             Ok(())
         } else {
-            Err(error::ErrorBadRequest("Invalid username or password"))
+            Err(ServiceError::BadRequest("validate fail".into()))
         }
+    }
+}
+
+
+pub struct QueryUser {
+    pub uname: String
+}
+
+
+impl Message for QueryUser {
+    type Result = Result<CheckUser, Error>;
+}
+
+
+#[derive(Deserialize,AsChangeset)]
+#[table_name="users"]
+pub struct UpdateUser {
+    pub uname: String,
+    // cannot change, just as id
+    pub avatar: String,
+    pub email: String,
+    pub intro: String,
+    pub location: String,
+    pub nickname: String,
+}
+
+impl Validate for UpdateUser{
+    fn validate(&self) -> Result<(), ServiceError> {
+//        todo validate
+        Ok(())
+    }
+}
+impl Message for UpdateUser{
+    type Result = Result<CheckUser, Error>;
+}
+
+#[derive(Deserialize)]
+pub struct ChangePsw{
+    pub uname:String,
+    pub new_psw:String
+}
+impl Message for ChangePsw{
+    type Result = Result<Msg,Error>;
+}
+impl Validate for ChangePsw{
+    fn validate(&self) -> Result<(), ServiceError> {
+//       todo
+        Ok(())
     }
 }

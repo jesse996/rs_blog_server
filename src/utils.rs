@@ -34,7 +34,7 @@ fn get_secret() -> String {
 pub fn encode_token(data: &CheckUser) -> Result<String, ServiceError> {
     let claims = Claims::new(data.id.as_str(), data.uname.as_str());
     encode(&Header::default(), &claims, get_secret().as_ref())
-        .map_err(|_err| ServiceError::InternalServerError("encode".into()))
+        .map_err(|_err| ServiceError::InternalServerError("encode error".into()))
 }
 
 

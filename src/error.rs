@@ -1,6 +1,5 @@
 use actix_web::{HttpResponse, ResponseError};
-use failure::{Fail,Error};
-use failure::format_err;
+use failure::{Fail};
 
 #[derive(Debug, Fail)]
 pub enum ServiceError {

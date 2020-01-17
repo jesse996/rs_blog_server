@@ -18,3 +18,10 @@ pub struct AuthMsg {
     pub user: CheckUser,
 }
 
+//msg for user info
+#[derive(Deserialize,Serialize,Debug)]
+pub struct UserMsg{
+    pub status:i32,
+    pub message:String,
+    pub user:CheckUser
+}
